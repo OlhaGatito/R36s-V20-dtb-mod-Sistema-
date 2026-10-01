@@ -1,0 +1,59 @@
+952:	display-subsystem {
+953:		compatible = "rockchip,display-subsystem";
+971:			route-dsi {
+2154:		compatible = "rockchip,px30s-dsi-dphy\0rockchip,px30-dsi-dphy";
+2167:	mipi-dphy-rx0@ff2f0000 {
+2168:		compatible = "rockchip,rk3326-mipi-dphy";
+2537:	dsi@ff450000 {
+2538:		compatible = "rockchip,px30-mipi-dsi";
+2581:		panel@0 {
+2582:			compatible = "sitronix,st7703\0simple-panel-dsi";
+2584:			backlight = <0x94>;
+2599:			dsi,flags = <0xa03>;
+2600:			dsi,format = <0x00>;
+2601:			dsi,lanes = <0x02>;
+2602:			panel-init-sequence = [39 00 06 ff 77 01 00 00 13 15 00 02 ef 08 39 00 06 ff 77 01 00 00 10 39 00 03 c0 4f 00 39 00 03 c1 10 0c 39 00 03 c2 01 14 15 00 02 cc 10 39 00 11 b0 00 0b 13 0d 10 07 02 08 07 1f 04 11 0f 28 2f 1f 39 00 11 b1 00 0c 13 0c 10 05 02 08 08 1e 05 13 11 27 30 1f 39 00 06 ff 77 01 00 00 11 15 00 02 b0 4d 15 00 02 b1 4d 15 00 02 b2 87 15 00 02 b3 80 15 00 02 b5 45 15 00 02 b7 85 15 00 02 b8 20 15 00 02 c0 09 15 00 02 c1 78 15 00 02 c2 78 15 64 02 d0 88 39 00 04 e0 00 00 02 39 00 0c e1 04 b0 06 b0 05 b0 07 b0 00 44 44 39 00 0d e2 20 20 44 44 96 a0 00 00 96 a0 00 00 39 00 05 e3 00 00 22 22 39 00 03 e4 44 44 39 00 11 e5 0c 90 b0 a0 0e 92 b0 a0 08 8c b0 a0 0a 8e b0 a0 39 00 05 e6 00 00 22 22 39 00 03 e7 44 44 39 00 11 e8 0d 91 b0 a0 0f 93 b0 a0 09 8d b0 a0 0b 8f b0 a0 39 00 03 e9 36 00 39 00 08 eb 00 00 e4 e4 44 88 40 39 00 11 ed c1 a2 bf 0f 67 45 ff ff ff ff 54 76 f0 fb 2a 1c 39 00 07 ef 10 0d 04 08 3f 1f 39 00 06 ff 77 01 00 00 13 39 00 03 e8 00 0e 39 00 06 ff 77 01 00 00 00 05 78 01 11 39 00 06 ff 77 01 00 00 13 39 0a 03 e8 00 0c 39 00 03 e8 00 00 39 00 06 ff 77 01 00 00 00 05 32 01 29];
+2603:			panel-exit-sequence = <0x5140128 0x5780110>;
+2606:			display-timings {
+2637:	vop@ff460000 {
+2638:		compatible = "rockchip,px30-vop-big";
+2644:		clock-names = "aclk_vop\0dclk_vop\0hclk_vop";
+2681:		interrupt-names = "vopb_mmu";
+2753:		reset-names = "rst_isp\0rst_mipicsiphy";
+2760:		rockchip,isp,mipiphy = <0x01>;
+2774:		interrupt-names = "isp_irq\0mi_irq\0mipi_irq";
+4147:		dsi0-lcd {
+4149:			dsi0-lcd-gpio {
+4155:		vcc-mipi-lcd {
+4157:			vcc-mipi-lcd-n {
+4226:	backlight {
+4227:		compatible = "pwm-backlight";
+4453:	regulator-vcc-mipi-lcd0 {
+4455:		regulator-name = "vcc_mipi_lcd0";
+4485:		display_subsystem = "/display-subsystem";
+4486:		route_lvds = "/display-subsystem/route/route-lvds";
+4487:		route_dsi = "/display-subsystem/route/route-dsi";
+4488:		route_rgb = "/display-subsystem/route/route-rgb";
+4521:		lvds_vopb_in = "/syscon@ff140000/lvds/ports/port@0/endpoint@0";
+4523:		rgb_in_vopb = "/syscon@ff140000/rgb/ports/port@0/endpoint@0";
+4580:		dsi_dphy = "/phy@ff2e0000";
+4581:		mipi_dphy_rx0 = "/mipi-dphy-rx0@ff2f0000";
+4600:		dsi = "/dsi@ff450000";
+4601:		dsi_in_vopb = "/dsi@ff450000/ports/port@0/endpoint@0";
+4602:		mipi_out = "/dsi@ff450000/ports/port@1";
+4603:		mipi_out_panel = "/dsi@ff450000/ports/port@1/endpoint";
+4604:		internal_display = "/dsi@ff450000/panel@0";
+4605:		timing0 = "/dsi@ff450000/panel@0/display-timings/timing0";
+4606:		mipi_in_panel = "/dsi@ff450000/panel@0/port/endpoint";
+4607:		vopb = "/vop@ff460000";
+4608:		vopb_out = "/vop@ff460000/port";
+4609:		vopb_out_dsi = "/vop@ff460000/port/endpoint@0";
+4610:		vopb_out_lvds = "/vop@ff460000/port/endpoint@1";
+4611:		vopb_out_rgb = "/vop@ff460000/port/endpoint@2";
+4612:		vopb_mmu = "/iommu@ff460f00";
+4636:		qos_vop_m0 = "/qos@ff550100";
+4637:		qos_vop_m1 = "/qos@ff550180";
+4824:		dsi0_lcd_gpio = "/pinctrl/dsi0-lcd/dsi0-lcd-gpio";
+4825:		vcc_mipi_lcd_n = "/pinctrl/vcc-mipi-lcd/vcc-mipi-lcd-n";
+4834:		backlight = "/backlight";
+4840:		vcc_mipi_lcd0 = "/regulator-vcc-mipi-lcd0";

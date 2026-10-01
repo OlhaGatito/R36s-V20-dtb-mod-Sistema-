@@ -1,0 +1,50 @@
+951:	display-subsystem {
+952:		compatible = "rockchip,display-subsystem";
+970:			route-dsi {
+2152:		compatible = "rockchip,px30s-dsi-dphy\0rockchip,px30-dsi-dphy";
+2165:	mipi-dphy-rx0@ff2f0000 {
+2166:		compatible = "rockchip,rk3326-mipi-dphy";
+2530:	dsi@ff450000 {
+2531:		compatible = "rockchip,px30-mipi-dsi";
+2574:		panel@0 {
+2575:			compatible = "simple-panel-dsi";
+2577:			backlight = <0x93>;
+2591:			dsi,flags = <0xa03>;
+2592:			dsi,format = <0x00>;
+2593:			dsi,lanes = <0x02>;
+2594:			panel-init-sequence = <0x390004b9 0xf1080139 0x5b122 0x1e1e8715 0x2b222 0x390009b3 0x1000606 0x18133935 0x390012ba 0x31004425 0x910a0000 0xc1000000 0xd024fb9 0xee390006 0xe3050501 0x1001500 0x2b40239 0x3b505 0x5390003 0xb6a9a939 0x3b864 0x20150002 0xcc021500 0x2bc4739 0x34e900 0x50366 0xa801230 0x37070a 0x80370006 0x1000000 0x8202469 0x98804888 0x88883135 0x79988158 0x88888800 0x00 0x00 0x3900 0x23e00002 0x7141630 0x102d070c 0xd0e1211 0x13181c00 0x2073020 0x30102d07 0xc0d1212 0x11130c15 0x5c80111 0x5640129>;
+2595:			panel-exit-sequence = <0x5100128 0x5200110>;
+2598:			display-timings {
+2629:	vop@ff460000 {
+2630:		compatible = "rockchip,px30-vop-big";
+2636:		clock-names = "aclk_vop\0dclk_vop\0hclk_vop";
+2673:		interrupt-names = "vopb_mmu";
+2745:		reset-names = "rst_isp\0rst_mipicsiphy";
+2752:		rockchip,isp,mipiphy = <0x01>;
+2766:		interrupt-names = "isp_irq\0mi_irq\0mipi_irq";
+4210:	backlight {
+4211:		compatible = "pwm-backlight";
+4519:		display_subsystem = "/display-subsystem";
+4520:		route_lvds = "/display-subsystem/route/route-lvds";
+4521:		route_dsi = "/display-subsystem/route/route-dsi";
+4522:		route_rgb = "/display-subsystem/route/route-rgb";
+4555:		lvds_vopb_in = "/syscon@ff140000/lvds/ports/port@0/endpoint@0";
+4557:		rgb_in_vopb = "/syscon@ff140000/rgb/ports/port@0/endpoint@0";
+4614:		dsi_dphy = "/phy@ff2e0000";
+4615:		mipi_dphy_rx0 = "/mipi-dphy-rx0@ff2f0000";
+4634:		dsi = "/dsi@ff450000";
+4635:		dsi_in_vopb = "/dsi@ff450000/ports/port@0/endpoint@0";
+4636:		mipi_out = "/dsi@ff450000/ports/port@1";
+4637:		mipi_out_panel = "/dsi@ff450000/ports/port@1/endpoint";
+4638:		internal_display = "/dsi@ff450000/panel@0";
+4639:		timing0 = "/dsi@ff450000/panel@0/display-timings/timing0";
+4640:		mipi_in_panel = "/dsi@ff450000/panel@0/port/endpoint";
+4641:		vopb = "/vop@ff460000";
+4642:		vopb_out = "/vop@ff460000/port";
+4643:		vopb_out_dsi = "/vop@ff460000/port/endpoint@0";
+4644:		vopb_out_lvds = "/vop@ff460000/port/endpoint@1";
+4645:		vopb_out_rgb = "/vop@ff460000/port/endpoint@2";
+4646:		vopb_mmu = "/iommu@ff460f00";
+4670:		qos_vop_m0 = "/qos@ff550100";
+4671:		qos_vop_m1 = "/qos@ff550180";
+4868:		backlight = "/backlight";

@@ -1,0 +1,188 @@
+558:		gpio0 = "/pinctrl/gpio0@ff040000";
+559:		gpio1 = "/pinctrl/gpio1@ff250000";
+560:		gpio2 = "/pinctrl/gpio2@ff260000";
+561:		gpio3 = "/pinctrl/gpio3@ff270000";
+1247:	i2s@ff060000 {
+1248:		compatible = "rockchip,px30-i2s-tdm";
+1265:	i2s@ff070000 {
+1266:		compatible = "rockchip,px30-i2s\0rockchip,rk3066-i2s";
+1270:		clock-names = "i2s_clk\0i2s_hclk";
+1275:		#sound-dai-cells = <0x00>;
+1280:	i2s@ff080000 {
+1281:		compatible = "rockchip,px30-i2s\0rockchip,rk3066-i2s";
+1285:		clock-names = "i2s_clk\0i2s_hclk";
+1290:		#sound-dai-cells = <0x00>;
+1786:				dc_det_adc = <0x00>;
+1797:			codec {
+1798:				compatible = "rockchip,rk817-codec";
+1799:				#sound-dai-cells = <0x00>;
+2029:	tsadc@ff280000 {
+2030:		compatible = "rockchip,px30s-tsadc";
+2036:		clock-names = "tsadc\0apb_pclk";
+2038:		reset-names = "tsadc-apb";
+2050:	saradc@ff288000 {
+2051:		compatible = "rockchip,px30-saradc\0rockchip,rk3399-saradc";
+2056:		clock-names = "saradc\0apb_pclk";
+2058:		reset-names = "saradc-apb";
+2253:		cd-gpios = <0x62 0x03 0x01>;
+2454:		clock-names = "aclk_vcodec\0hclk_vcodec";
+2486:		clock-names = "aclk_vcodec\0hclk_vcodec";
+2504:		clock-names = "aclk_vcodec\0hclk_vcodec\0clk_core";
+2579:			reset-gpios = <0x62 0x11 0x01>;
+3077:		gpio0@ff040000 {
+3078:			compatible = "rockchip,gpio-bank";
+3082:			gpio-controller;
+3083:			#gpio-cells = <0x02>;
+3089:		gpio1@ff250000 {
+3090:			compatible = "rockchip,gpio-bank";
+3094:			gpio-controller;
+3095:			#gpio-cells = <0x02>;
+3101:		gpio2@ff260000 {
+3102:			compatible = "rockchip,gpio-bank";
+3106:			gpio-controller;
+3107:			#gpio-cells = <0x02>;
+3113:		gpio3@ff270000 {
+3114:			compatible = "rockchip,gpio-bank";
+3118:			gpio-controller;
+3119:			#gpio-cells = <0x02>;
+3253:		tsadc {
+3255:			tsadc-otp-pin {
+3260:			tsadc-otp-out {
+3301:			uart1-rts-gpio {
+3559:		i2s0 {
+3561:			i2s0-8ch-mclk {
+3566:			i2s0-8ch-sclktx {
+3571:			i2s0-8ch-sclkrx {
+3576:			i2s0-8ch-lrcktx {
+3581:			i2s0-8ch-lrckrx {
+3586:			i2s0-8ch-sdo0 {
+3591:			i2s0-8ch-sdo1 {
+3596:			i2s0-8ch-sdo2 {
+3601:			i2s0-8ch-sdo3 {
+3606:			i2s0-8ch-sdi0 {
+3611:			i2s0-8ch-sdi1 {
+3616:			i2s0-8ch-sdi2 {
+3621:			i2s0-8ch-sdi3 {
+3627:		i2s1 {
+3629:			i2s1-2ch-mclk {
+3634:			i2s1-2ch-sclk {
+3639:			i2s1-2ch-lrck {
+3644:			i2s1-2ch-sdi {
+3649:			i2s1-2ch-sdo {
+3655:		i2s2 {
+3657:			i2s2-2ch-mclk {
+3662:			i2s2-2ch-sclk {
+3667:			i2s2-2ch-lrck {
+3672:			i2s2-2ch-sdi {
+3677:			i2s2-2ch-sdo {
+4128:		headphone {
+4136:		gpio-lcd {
+4157:		gpio-led {
+4177:			soc_slppin_gpio {
+4232:	adc-keys {
+4233:		compatible = "adc-keys";
+4271:	rocknix-singleadc-joypad {
+4272:		compatible = "rocknix-singleadc-joypad";
+4273:		joypad-name = "retrogame_joypad";
+4274:		joypad-product = <0x1101>;
+4275:		joypad-revision = <0x100>;
+4276:		joypad-vendor = <0x484b>;
+4280:		io-channel-names = "amux_adc";
+4284:		amux-a-gpios = <0xbb 0x01 0x01>;
+4285:		amux-b-gpios = <0xbb 0x00 0x00>;
+4286:		amux-en-gpios = <0xbb 0x02 0x01>;
+4287:		button-adc-scale = <0x02>;
+4288:		button-adc-deadzone = <0x40>;
+4289:		button-adc-fuzz = <0x20>;
+4290:		button-adc-flat = <0x20>;
+4303:			gpios = <0xbc 0x19 0x01>;
+4304:			label = "GPIO DPAD-UP";
+4309:			gpios = <0xbc 0x1a 0x01>;
+4310:			label = "GPIO DPAD-DOWN";
+4315:			gpios = <0xbc 0x0d 0x01>;
+4316:			label = "GPIO DPAD-LEFT";
+4321:			gpios = <0xbc 0x18 0x01>;
+4322:			label = "GPIO DPAD-RIGHT";
+4327:			gpios = <0xbc 0x14 0x01>;
+4328:			label = "GPIO BTN-A";
+4333:			gpios = <0xbc 0x15 0x01>;
+4334:			label = "GPIO BTN-B";
+4339:			gpios = <0xbc 0x0b 0x01>;
+4340:			label = "GPIO BTN-Y";
+4345:			gpios = <0xbc 0x0a 0x01>;
+4346:			label = "GPIO BTN-X";
+4351:			gpios = <0xbc 0x0c 0x01>;
+4352:			label = "GPIO F2";
+4357:			gpios = <0x62 0x12 0x01>;
+4358:			label = "GPIO F4";
+4363:			gpios = <0xbc 0x07 0x01>;
+4364:			label = "GPIO BTN_F3";
+4369:			gpios = <0xbb 0x09 0x01>;
+4375:			gpios = <0xbb 0x0a 0x01>;
+4381:			gpios = <0xbc 0x11 0x01>;
+4382:			label = "GPIO BTN_TR";
+4387:			gpios = <0xbc 0x10 0x01>;
+4388:			label = "GPIO BTN_TR2";
+4393:			gpios = <0xbc 0x13 0x01>;
+4394:			label = "GPIO BTN_TL";
+4399:			gpios = <0xbc 0x12 0x01>;
+4400:			label = "GPIO BTN_TL2";
+4405:	gpio-leds {
+4406:		compatible = "gpio-leds";
+4415:			gpios = <0xbb 0x03 0x00>;
+4422:			gpios = <0xbb 0x04 0x00>;
+4429:			gpios = <0xbb 0x05 0x00>;
+4436:			gpios = <0x62 0x0f 0x00>;
+4440:	rk817-sound {
+4441:		compatible = "rockchip,multicodecs-card";
+4443:		hp-det-gpio = <0x62 0x0b 0x01>;
+4444:		rockchip,format = "i2s";
+4447:		rockchip,codec = <0xbf>;
+4450:		rockchip,audio-routing = "Headphone\0HPOL\0Headphone\0HPOR\0Speaker\0HPOL\0Speaker\0HPOR";
+4474:		gpio = <0xbc 0x04 0x00>;
+4489:		gpio = <0x62 0x0d 0x01>;
+4545:		i2s0_8ch = "/i2s@ff060000";
+4546:		i2s1_2ch = "/i2s@ff070000";
+4547:		i2s2_2ch = "/i2s@ff080000";
+4583:		rk817_codec = "/i2c@ff180000/pmic@20/codec";
+4601:		tsadc = "/tsadc@ff280000";
+4602:		saradc = "/saradc@ff288000";
+4683:		gpio0 = "/pinctrl/gpio0@ff040000";
+4684:		gpio1 = "/pinctrl/gpio1@ff250000";
+4685:		gpio2 = "/pinctrl/gpio2@ff260000";
+4686:		gpio3 = "/pinctrl/gpio3@ff270000";
+4708:		tsadc_otp_gpio = "/pinctrl/tsadc/tsadc-otp-pin";
+4709:		tsadc_otp_pin = "/pinctrl/tsadc/tsadc-otp-pin";
+4710:		tsadc_otp_out = "/pinctrl/tsadc/tsadc-otp-out";
+4717:		uart1_rts_gpio = "/pinctrl/uart1/uart1-rts-gpio";
+4763:		i2s0_8ch_mclk = "/pinctrl/i2s0/i2s0-8ch-mclk";
+4764:		i2s0_8ch_sclktx = "/pinctrl/i2s0/i2s0-8ch-sclktx";
+4765:		i2s0_8ch_sclkrx = "/pinctrl/i2s0/i2s0-8ch-sclkrx";
+4766:		i2s0_8ch_lrcktx = "/pinctrl/i2s0/i2s0-8ch-lrcktx";
+4767:		i2s0_8ch_lrckrx = "/pinctrl/i2s0/i2s0-8ch-lrckrx";
+4768:		i2s0_8ch_sdo0 = "/pinctrl/i2s0/i2s0-8ch-sdo0";
+4769:		i2s0_8ch_sdo1 = "/pinctrl/i2s0/i2s0-8ch-sdo1";
+4770:		i2s0_8ch_sdo2 = "/pinctrl/i2s0/i2s0-8ch-sdo2";
+4771:		i2s0_8ch_sdo3 = "/pinctrl/i2s0/i2s0-8ch-sdo3";
+4772:		i2s0_8ch_sdi0 = "/pinctrl/i2s0/i2s0-8ch-sdi0";
+4773:		i2s0_8ch_sdi1 = "/pinctrl/i2s0/i2s0-8ch-sdi1";
+4774:		i2s0_8ch_sdi2 = "/pinctrl/i2s0/i2s0-8ch-sdi2";
+4775:		i2s0_8ch_sdi3 = "/pinctrl/i2s0/i2s0-8ch-sdi3";
+4776:		i2s1_2ch_mclk = "/pinctrl/i2s1/i2s1-2ch-mclk";
+4777:		i2s1_2ch_sclk = "/pinctrl/i2s1/i2s1-2ch-sclk";
+4778:		i2s1_2ch_lrck = "/pinctrl/i2s1/i2s1-2ch-lrck";
+4779:		i2s1_2ch_sdi = "/pinctrl/i2s1/i2s1-2ch-sdi";
+4780:		i2s1_2ch_sdo = "/pinctrl/i2s1/i2s1-2ch-sdo";
+4781:		i2s2_2ch_mclk = "/pinctrl/i2s2/i2s2-2ch-mclk";
+4782:		i2s2_2ch_sclk = "/pinctrl/i2s2/i2s2-2ch-sclk";
+4783:		i2s2_2ch_lrck = "/pinctrl/i2s2/i2s2-2ch-lrck";
+4784:		i2s2_2ch_sdi = "/pinctrl/i2s2/i2s2-2ch-sdi";
+4785:		i2s2_2ch_sdo = "/pinctrl/i2s2/i2s2-2ch-sdo";
+4857:		hp_det = "/pinctrl/headphone/hp-det";
+4858:		lcd_rst = "/pinctrl/gpio-lcd/lcd-rst";
+4859:		lcd_en = "/pinctrl/gpio-lcd/lcd-en";
+4861:		led_pins = "/pinctrl/gpio-led/led-pins";
+4864:		soc_slppin_gpio = "/pinctrl/pmic/soc_slppin_gpio";
+4870:		adc_keys = "/adc-keys";
+4871:		joypad = "/rocknix-singleadc-joypad";
+4872:		leds = "/gpio-leds";
