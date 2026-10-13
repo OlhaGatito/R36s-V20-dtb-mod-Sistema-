@@ -1,3 +1,5 @@
+> **Guia de leitura:** este documento registra a comparação inicial, não uma certificação de compatibilidade. Para o fluxo de mapeamento, limites de modificação e validação, consulte [Metodologia Sarue](../docs/METODOLOGIA-MAPEAMENTO.md) e [Matriz de testes](../docs/MATRIZ-DE-TESTES.md). O relato de desempenho deve ser interpretado conforme a seção de evidências do README.
+
 # Análise inicial — K36 vs candidatos
 
 Data: 2026-10-01
