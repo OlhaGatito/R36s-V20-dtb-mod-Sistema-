@@ -24,7 +24,7 @@ Guia para localizar os arquivos sem confundir referência, fonte descompilada e 
 - dts/rk3326s-gkd-pixel2-key.txt e dts/rk3326s-gkd-pixel2-display.txt: recortes de análise do candidato GKD Pixel2.
 - dts/experimental/rf3536k4ka-rocknix-buttons.dts: variante experimental relacionada ao mapeamento de botões.
 - dts/experimental/rf3536k4ka-rocknix-analog-invert-test.dts: experimento de inversão de analógicos.
-- dts/experimental/rf3536k4ka-rocknix-buttons-analog-test.dts e rf3536k4ka-rocknix-buttons-fixed-test.dts: variantes de teste relacionadas a controles.
+- dts/rf3536k4ka-rocknix-buttons-analog-test.dts e dts/rf3536k4ka-rocknix-buttons-fixed-test.dts: variantes de teste relacionadas a controles que permanecem na raiz de dts/ por histórico.
 - dts/experimental/rf3536k4ka-play-type2-gpios.dts: experimento de mapeamento Type 2; não assumir aprovado.
 - dts/rk3326s-gamemt-e6.dts e dts/rk3326s-gkd-pixel2.dts: fontes de comparação, não indicação de que o hardware E6/Pixel2 seja idêntico ao V20.
 
