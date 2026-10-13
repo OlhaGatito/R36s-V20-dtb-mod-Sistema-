@@ -1,3 +1,10 @@
+/*
+ * SARUE PROJECT NOTE
+ * Variante experimental relacionada ao mapeamento de botões. Comparar com a base e validar controles antes de uso.
+ * Safety: this comment documents intent only; it does not certify hardware compatibility.
+ * Method and test record: docs/METODOLOGIA-MAPEAMENTO.md and docs/MATRIZ-DE-TESTES.md
+ */
+
 /dts-v1/;
 
 / {
