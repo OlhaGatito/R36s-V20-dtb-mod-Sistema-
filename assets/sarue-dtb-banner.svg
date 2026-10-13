@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420" role="img" aria-labelledby="title desc">
+  <title id="title">SARUE — DTB Mod Lab</title>
+  <desc id="desc">Identidade visual do projeto de análise e modificação de Device Tree Blobs para o R36S V20 e plataformas RK3326.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#101827"/><stop offset="1" stop-color="#172f3b"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#42e8c5"/><stop offset="1" stop-color="#70a7ff"/></linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#9ac7d7" stroke-opacity=".09" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1400" height="420" rx="28" fill="url(#bg)"/><rect width="1400" height="420" rx="28" fill="url(#grid)"/>
+  <circle cx="1170" cy="90" r="210" fill="#42e8c5" opacity=".06"/><circle cx="1280" cy="350" r="170" fill="#70a7ff" opacity=".07"/>
+  <g transform="translate(82 88)"><rect width="108" height="108" rx="24" fill="#0c1723" stroke="url(#accent)" stroke-width="3"/><path d="M25 32H83M25 54H65M25 76H78" stroke="url(#accent)" stroke-width="7" stroke-linecap="round"/><circle cx="80" cy="54" r="7" fill="#70a7ff"/><circle cx="68" cy="76" r="7" fill="#42e8c5"/></g>
+  <text x="222" y="139" fill="#f2f7fb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="5">SARUE</text>
+  <text x="224" y="190" fill="#42e8c5" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="25" font-weight="700" letter-spacing="3">DTB MOD LAB</text>
+  <text x="84" y="265" fill="#d3e2eb" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24">R36S V20 · RK3326S · Device Tree research</text>
+  <text x="84" y="310" fill="#a8bdca" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="19">Map · Compare · Document · Validate</text>
+  <path d="M84 350H1316" stroke="url(#accent)" stroke-opacity=".65" stroke-width="2"/>
+  <text x="1316" y="385" text-anchor="end" fill="#8fa9b8" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">INDEPENDENT COMMUNITY PROJECT</text>
+</svg>
