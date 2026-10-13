@@ -1,3 +1,10 @@
+/*
+ * SARUE PROJECT NOTE
+ * Fonte DTS descompilada associada ao DTB K36 de referência. Artefato de análise; preservar o DTB original e regenerar a descompilação se a origem mudar.
+ * Safety: this comment documents intent only; it does not certify hardware compatibility.
+ * Method and test record: docs/METODOLOGIA-MAPEAMENTO.md and docs/MATRIZ-DE-TESTES.md
+ */
+
 /dts-v1/;
 
 / {
