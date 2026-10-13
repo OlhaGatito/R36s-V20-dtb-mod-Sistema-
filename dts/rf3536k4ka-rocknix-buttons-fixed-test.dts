@@ -1,3 +1,10 @@
+/*
+ * SARUE PROJECT NOTE
+ * Variante experimental de correção de mapeamento de controles. O arquivo está na pasta dts/ por histórico; não tratar como estável sem teste físico registrado.
+ * Safety: this comment documents intent only; it does not certify hardware compatibility.
+ * Method and test record: docs/METODOLOGIA-MAPEAMENTO.md and docs/MATRIZ-DE-TESTES.md
+ */
+
 /dts-v1/;
 
 / {
