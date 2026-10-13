@@ -1,3 +1,10 @@
+/*
+ * SARUE PROJECT NOTE
+ * Variante experimental de controles e analógicos. O arquivo está na pasta dts/ por histórico; consulte a matriz de testes antes de considerar qualquer uso.
+ * Safety: this comment documents intent only; it does not certify hardware compatibility.
+ * Method and test record: docs/METODOLOGIA-MAPEAMENTO.md and docs/MATRIZ-DE-TESTES.md
+ */
+
 /dts-v1/;
 
 / {
